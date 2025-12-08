@@ -98,6 +98,7 @@ rebrickable_parts_tool = StructuredTool.from_function(
     args_schema=RebrickableInput
 )
 
+# Test
 # print(fetch_rebrickable_set("75192-1"))
 # print(fetch_rebrickable_minifigs("75192-1"))
 # print(fetch_color_stats("75192-1"))
