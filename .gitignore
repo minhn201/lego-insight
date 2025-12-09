@@ -18,3 +18,7 @@ build/
 .vscode/
 *.swp
 *.swo
+# Virtual environments
+venv/
+env/
+.venv/
