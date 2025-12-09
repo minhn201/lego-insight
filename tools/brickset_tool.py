@@ -100,7 +100,10 @@ class GetSetsInput(BaseModel):
     theme: Optional[str] = Field(default=None, description="e.g. Star Wars")
     year: Optional[str] = Field(default=None, description="e.g. 2017 or 1999,2019")
     pageSize: Optional[int] = Field(default=100, description="Max results per page (default 100)")
-    orderBy: Optional[str] = Field(default=None, description="e.g. RatingDESC, YearDESC")
+    orderBy: Optional[str] = Field(
+        default=None,
+        description="Sort order (case-insensitive). Options: Number, YearFrom, Pieces, Minifigs, Rating, USRetailPrice (or UK/CA/DE), USPricePerPiece (or UK/CA/DE), Theme, Subtheme, Name, Random, QtyOwned, etc. Append ' DESC' for descending (e.g., 'USRetailPriceDESC' for most expensive)."
+    )
     extendedData: Optional[int] = Field(default=0, description="1 = include extra fields like images")
 
 class GetReviewsInput(BaseModel):
@@ -114,7 +117,7 @@ class GetThemesInput(BaseModel):
 brickset_get_sets_tool = StructuredTool.from_function(
     func=lambda **kwargs: _get_sets(**kwargs),
     name="brickset_get_sets",
-    description="Search for LEGO sets by theme, year, set number, etc. Returns JSON list of matching sets.",
+    description="Search for LEGO sets by theme, year, set number, prices, etc. Returns JSON list of matching sets.",
     args_schema=GetSetsInput,
 )
 
@@ -132,6 +135,7 @@ brickset_get_themes_tool = StructuredTool.from_function(
     args_schema=GetThemesInput,
 )
 
+""" TESTS
 if __name__ == "__main__":
     print("=== Available Themes ===")
     themes_result = brickset_get_themes_tool.func()
@@ -144,3 +148,5 @@ if __name__ == "__main__":
     print("\n=== Reviews by Set Number (auto-fetch test) ===")
     reviews_result = brickset_get_reviews_tool.func(setNumber="75367-1")
     print(reviews_result)
+"""
+

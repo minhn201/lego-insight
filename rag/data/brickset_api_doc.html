@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://brickset.com/article/52664/api-version-3-documentation -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="">
+    <meta name="viewport" id="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" title="Brickset news feed" href="https://brickset.com/feed/">
+    <link rel="canonical" href="https://brickset.com/article/52664/api-version-3-documentation">
+
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://brickset.com/assets/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://brickset.com/assets/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://brickset.com/assets/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://brickset.com/assets/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://brickset.com/assets/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://brickset.com/assets/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://brickset.com/assets/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://brickset.com/assets/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://brickset.com/assets/images/icons/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="https://brickset.com/assets/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://brickset.com/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://brickset.com/assets/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://brickset.com/assets/images/icons/favicon-16x16.png">
+    
+    <link rel="search" type="application/opensearchdescription+xml" title="Brickset" href="https://brickset.com/opensearch.xml">
+
+    <link rel="manifest" href="https://brickset.com/assets/images/icons/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+
+    <meta name="msapplication-TileColor" content="#4667a4">
+    <meta name="msapplication-TileImage" content="/assets/images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#4667a4">
+    <meta name="p:domain_verify" content="891d5f8a6ab61f88cd91190bd2d30152">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://brickset.com/utils/ogimage/article/52664?75462">
+    <meta property="og:title" content="API version 3 documentation">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://brickset.com/article/52664/api-version-3-documentation">
+    <meta property="og:site_name" content="Brickset.com">
+    <meta property="fb:app_id" content="114136156486">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@brickset">
+    <meta name="twitter:title" content="API version 3 documentation">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://brickset.com/utils/ogimage/article/52664?75462">
+
+    <link href="./brickset_api_doc_files/css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="./brickset_api_doc_files/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./brickset_api_doc_files/highslide.css">
+<link rel="stylesheet" type="text/css" href="./brickset_api_doc_files/template.css">
+<link rel="stylesheet" type="text/css" href="./brickset_api_doc_files/styles.css">
+
+
+    
+
+   <style></style>
+
+    
+
+
+
+    
+
+
+
+    
+
+
+    <script async="" src="./brickset_api_doc_files/panorama.js"></script><iframe id="pxcelframe" title="pxcelframe" src="./brickset_api_doc_files/t_.html" style="display: none;"></iframe><script async="" src="./brickset_api_doc_files/ppg.js"></script><script async="" src="./brickset_api_doc_files/642abebb3cccc300126c810b.js"></script><script async="async" type="text/javascript" src="./brickset_api_doc_files/sharethis.js"></script>
+
+   
+
+
+
+
+
+    <script type="text/javascript">
+        var setup = 1;
+        var loggedIn = 1;
+        var userid = 567819;
+    </script>
+
+    
+        
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./brickset_api_doc_files/js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZSNG05RX84');
+
+        // playwire GA4 code
+        
+    </script>    
+
+    <title>API version 3 documentation | Brickset</title>
+
+<style>.lottie-animation-container{width:var(--lottie-animation-container-width);height:var(--lottie-animation-container-height);background-color:var(--lottie-animation-container-background-color);overflow:hidden;margin:var(--lottie-animation-margin)}.lottie-animation-container svg{transform:scale(var(--lottie-animation-scale))}</style><style>.lottie-animation-container{width:var(--lottie-animation-container-width);height:var(--lottie-animation-container-height);background-color:var(--lottie-animation-container-background-color);overflow:hidden;margin:var(--lottie-animation-margin)}.lottie-animation-container svg{transform:scale(var(--lottie-animation-scale))}</style><style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style><style type="text/css">.highslide img {cursor: url(/assets/js/highslide/graphics/zoomin.cur), pointer !important;}</style><style type="text/css">#st-1 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  direction: ltr;
+  display: block;
+  opacity: 1;
+  text-align: left;
+  z-index: 94034;
+}
+#st-1.st-animated {
+  -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+}
+#st-1.st-hidden {
+  opacity: 0;
+}
+
+#st-1.st-preview {
+  display: none!important;
+  opacity: 0!important;
+}
+#st-1.st-hide {
+  display: none;
+}
+#st-1 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+  -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 8px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+#st-1 .st-btn:last-child {
+  margin-right: 0;
+}
+#st-1 .st-btn > svg {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  vertical-align: top;
+}
+#st-1 .st-btn > img {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  vertical-align: top;
+}
+#st-1 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  min-width: 60px;
+  opacity: 1;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+}
+#st-1.st-has-labels .st-btn {
+  min-width: 120px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label {
+  min-width: 50px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label > span {
+  display: none;
+}
+#st-1.st-has-labels .st-btn.st-hide-label > span {
+  display: none;
+}
+#st-1 .st-total {
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 12px;
+  margin-right: 0;
+  max-width: 80px;
+  padding: 4px 8px;
+  text-align: center;
+}
+#st-1 .st-total.st-hidden {
+  display: none;
+}
+#st-1 .st-total > span {
+  font-size: 16px;
+  line-height: 17px;
+  display: block;
+  padding: 0;
+}
+#st-1 .st-total > span.st-shares {
+  font-size: 9px;
+  line-height: 9px;
+}
+#st-1.st-justified {
+  display: flex;
+  text-align: center;
+}
+#st-1.st-justified .st-btn {
+  -moz-flex: 1;
+-ms-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+}#st-1 .st-btn:hover {
+  opacity: .8;
+  top: -4px;
+}#st-1 .st-btn[data-network='facebook'] {
+  background-color: #4267B2
+}
+#st-1 .st-btn[data-network='facebook'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='facebook'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='twitter'] {
+  background-color: #000000
+}
+#st-1 .st-btn[data-network='twitter'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='twitter'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='messenger'] {
+  background-color: #448AFF
+}
+#st-1 .st-btn[data-network='messenger'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='messenger'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='whatsapp'] {
+  background-color: #25d366
+}
+#st-1 .st-btn[data-network='whatsapp'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='whatsapp'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='reddit'] {
+  background-color: #ff4500
+}
+#st-1 .st-btn[data-network='reddit'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='reddit'] > span {
+  color: #fff
+}#st-1 .st-btn[data-network='snapchat'] > span {
+  color: #333};
+}</style></head>
+
+<body id="body" class="article ">
+
+    
+
+    
+
+    
+    
+    <div class="outerwrap">
+
+        <header role="banner" id="banner">
+
+           <div class="wrap">
+                <div class="topwrap">
+
+                    <a href="https://brickset.com/" rel="home" class="logo">
+                        <div class="hgroup">
+
+                        </div>
+                    </a>
+
+                    <div class="country">
+                        <a title="Set your preferred country" href="https://brickset.com/article/52664/api-version-3-documentation#" style="background: url(&#39;https://images.brickset.com/flags/CA.png&#39;)">
+                            CA
+                        </a>
+                    </div>
+                    <nav role="navigation" class="sitetools">
+                        <ul>
+                            
+
+                            
+    <li><a href="https://brickset.com/sets/mycollection-owned">0&nbsp;sets</a></li><li class="hideonlargescreen"><a href="https://brickset.com/sets/mycollection-wanted">0&nbsp;wanted</a></li><li><a href="https://brickset.com/minifigs/mycollection-owned">0&nbsp;minifigs</a></li>
+
+
+
+
+                                <li><a href="https://brickset.com/profile">minhn201</a></li> 
+                                <li><a href="https://brickset.com/logout">Log out</a></li>
+                             
+                            <li><a href="https://brickset.com/article/52664/api-version-3-documentation#" id="darkmodeswitch" title="Switch to dark mode">Dark</a></li>
+                        </ul>
+                    </nav>
+
+                    <form role="search" action="https://brickset.com/search" id="searchForm">
+                        <input type="text" class="keyword ui-autocomplete-input" placeholder="Search" id="searchQuery" name="query" value="" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                        <select name="scope" id="searchScope" style="display: none;">
+                            <option value="All">All</option><option value="Sets">Sets</option><option value="Minifigs">Minifigs</option><option value="Parts">Parts</option><option value="BrickLists">BrickLists</option><option value="News">News</option><option value="Members">Members</option>
+                        </select><span id="searchScopeSelectBoxItContainer" class="selectboxit-container"><span id="searchScopeSelectBoxIt" class="selectboxit  selectboxit-btn" name="scope" tabindex="0" unselectable="on" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="searchScopeSelectBoxItOptions" aria-activedescendant="0" aria-label="" aria-live="assertive" style="width: 94px;"><span id="searchScopeSelectBoxItText" class="selectboxit-text" unselectable="on" data-val="All" style="max-width: 77px;">All</span><span id="searchScopeSelectBoxItArrowContainer" class="selectboxit-arrow-container" unselectable="on"><i id="searchScopeSelectBoxItArrow" class="selectboxit-arrow selectboxit-default-arrow" unselectable="on"></i></span></span><ul id="searchScopeSelectBoxItOptions" class="selectboxit-options selectboxit-list" tabindex="-1" role="listbox" aria-hidden="true" style=""><li id="0" data-val="All" data-disabled="false" class="selectboxit-option  selectboxit-option-first selectboxit-selected" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>All</a></li><li id="1" data-val="Sets" data-disabled="false" class="selectboxit-option" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>Sets</a></li><li id="2" data-val="Minifigs" data-disabled="false" class="selectboxit-option" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>Minifigs</a></li><li id="3" data-val="Parts" data-disabled="false" class="selectboxit-option" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>Parts</a></li><li id="4" data-val="BrickLists" data-disabled="false" class="selectboxit-option" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>BrickLists</a></li><li id="5" data-val="News" data-disabled="false" class="selectboxit-option" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>News</a></li><li id="6" data-val="Members" data-disabled="false" class="selectboxit-option  selectboxit-option-last" role="option"><a class="selectboxit-option-anchor"><span class="selectboxit-option-icon-container"><i class="selectboxit-option-icon  selectboxit-container"></i></span>Members</a></li></ul></span>
+                        <input type="submit" value="Go">
+                    </form>
+                </div>
+
+
+                <nav role="navigation" class="primarynav"><span id="bannernavtoggle"><span>Menu</span></span>
+                    
+  
+
+
+<ul>
+    <li class="browse haschildren"><a href="https://brickset.com/browse"><span>Browse</span></a>
+        
+            <div class="subnav">
+                <div class="wrap">
+                    <div class="col">
+
+                        <div class="group">
+                            <div class="heading">Browse our database</div>
+                            <ul>
+                                <li><a href="https://brickset.com/sets">Sets</a></li>
+                                <li><a href="https://brickset.com/minifigs">Minifigs</a></li>
+                                <li><a href="https://brickset.com/parts">Parts</a></li>
+                                <li><a href="https://brickset.com/colours">Colours</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="https://brickset.com/instructions">Instructions</a></li>
+                                <li><a href="https://brickset.com/inventories">Inventories</a></li>
+                                <li>&nbsp;</li>
+                                <li><a href="https://brickset.com/bricklists">BrickLists</a></li>
+                                <li><a href="https://brickset.com/queries">Queries</a></li>
+                                <li><a href="https://brickset.com/reviews">User Reviews</a></li>
+                                <li><a href="https://brickset.com/news">News and staff reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <div class="heading">Sets by year</div>
+                            <ul>
+                                <li><a href="https://brickset.com/sets/year-2026">2026</a></li>
+                                <li><a href="https://brickset.com/sets/year-2025">2025</a></li>
+                                <li><a href="https://brickset.com/sets/year-2024">2024</a></li>
+                                <li><a href="https://brickset.com/sets">Earlier</a></li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <div class="heading">Set lists</div>
+                            <ul>
+                                  <li><a href="https://brickset.com/sets?query=new-additions">Recently added</a></li>
+                                  <li><a href="https://brickset.com/sets/query-45">Largest </a></li>
+                                  <li><a href="https://brickset.com/sets/query-9196">Most expensive</a></li>
+                                  <li><a href="https://brickset.com/sets/query-9779">Forthcoming</a></li>
+                                  <li><a href="https://brickset.com/sets/query-9752">Sets retiring soon</a></li>
+                                  <li><a href="https://brickset.com/sets/query-9753">Sets retiring this year</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="group">
+                            <div class="heading">New for 2026</div>
+                            <ul>
+                                
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Botanicals">Botanicals</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-City">City</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Collectable-Minifigures">Collectable Minifigures</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Creator">Creator</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Disney">Disney</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Friends">Friends</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Harry-Potter">Harry Potter</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Icons">Icons</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Marvel-Super-Heroes">Marvel Super Heroes</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Minecraft">Minecraft</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Ninjago">Ninjago</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Seasonal">Seasonal</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Speed-Champions">Speed Champions</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Star-Wars">Star Wars</a></li>
+                                    
+                                        <li><a href="https://brickset.com/sets/year-2026/theme-Technic">Technic</a></li>
+                                    
+                                <li>&nbsp;</li>
+                                 <li><a href="https://brickset.com/sets/year-2026/tag-paper-bag?query=30000-30999">Paper bags</a></li>
+                                 <li><a href="https://brickset.com/sets/year-2026/tag-18-plus">18+</a></li>
+                                 <li><a href="https://brickset.com/sets/year-2026/tag-gift-with-purchase">Gifts with Purchase (GWP)</a></li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+    </li>
+
+    <li class="buy haschildren"><a href="https://brickset.com/buy"><span>Buy</span></a>
+        
+            <div class="subnav">
+                <div class="wrap">
+                    <div class="col">
+                       <div class="group">
+
+                        <div class="group">
+                            <div class="heading">Buy at LEGO.com</div>
+                            <ul>
+                                <li><a href="https://brickset.com/buy/vendor-lego/availability-In-Stock/order-dateadded">Available now</a></li>
+                                <li><a href="https://brickset.com/buy/vendor-lego/availability-Coming-soon">Coming soon</a></li>
+                                <li><a href="https://brickset.com/buy/vendor-lego/availability-Preorder">Pre-order</a></li>
+                                <li><a href="https://brickset.com/buy/vendor-lego/order-percentdiscount">Discounts</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="heading">Buy at Amazon</div>
+                            <ul>
+                                <li><a href="https://brickset.com/buy/amazon">Amazon price comparator</a></li>
+                                <li><a href="https://brickset.com/buy/vendor-amazon/order-percentdiscount">Discounts at Amazon.ca</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="group">
+                            <div class="heading">Buy at eBay</div>
+                            <ul>
+                                <li><a href="https://brickset.com/buy/ebay">Search for a set at eBay</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="group">
+                            <div class="heading">Buy at BrickLink</div>
+                            <ul>
+                                <li><a href="https://brickset.com/buy/vendor-bricklink/order-percentdiscount">Discounted sets</a></li>
+                                <li><a href="https://brickset.com/buy/vendor-bricklink/order-dateremoved">Discontinued sets</a></li>
+                            </ul>
+                        </div><div class="group">
+                            <div class="heading">More...</div>
+                            <ul>
+                                <li><a href="https://brickset.com/buy/availability-in-stock/order-percentdiscount">View all discounts in Canada</a></li>
+                                <li><a href="https://brickset.com/buy/availability-in-stock/order-dateadded">See what's new in Canada</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </li>
+
+    
+        <li class="mysets haschildren"><a href="https://brickset.com/mycollection"><span>My Sets</span></a>
+            
+                 <div class="subnav">
+                    <div class="wrap">
+                        <div class="col">
+                            <div class="group">
+                                <div class="heading">Overview</div>
+                                <ul>
+                                    <li>
+                                        <a href="https://brickset.com/mycollection">Overview of your collection</a>
+                                    </li>
+                                </ul>
+                            </div>
+                           <div class="group">
+                                <div class="heading">Sets</div>
+                                <ul>
+                                    <li><a href="https://brickset.com/sets/mycollection-owned">Sets you own</a></li>
+                                    <li><a href="https://brickset.com/sets/mycollection-wanted">Sets you want</a></li>
+                                    <li><a href="https://brickset.com/mycollection/sets/graphs">Collection analysis</a></li>
+                                    <li><a href="https://brickset.com/acm">Advanced Collection Manager</a></li>                       
+                                </ul>
+                            </div>
+                            <div class="group">
+                                <div class="heading">Minifigs</div>
+                                <ul>
+                                    <li><a href="https://brickset.com/minifigs/mycollection-owned">Minifigs you own</a></li>
+                                    <li><a href="https://brickset.com/minifigs/mycollection-wanted">Minifigs you want</a></li>
+                                    <li><a href="https://brickset.com/mycollection/minifigs/graphs">Collection analysis</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+
+                            
+
+                            <div class="group">
+                                <div class="heading">Import and Export</div>
+                                <ul>
+                                    <li><a href="https://brickset.com/import">Import data from elsewhere</a></li>
+                                    <li><a href="https://brickset.com/export">Export your collection</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            
+        </li>
+    
+
+    
+
+
+  <li class="library haschildren"><a href="https://brickset.com/library"><span>LIbrary</span></a>
+        <div class="subnav">
+            <div class="wrap">
+                <div class="col">
+                        <div class="group">
+                            <div class="heading">LIbrary</div>
+                            <ul>
+                                <li><a href="https://brickset.com/library/catalogues">Catalogues</a></li>
+                                <li><a href="https://brickset.com/library/ideasbooks">Ideas Books</a></li>
+                                <li><a href="https://brickset.com/library/wallpaper">Desktop wallpapers</a></li>
+                                <li><a href="https://brickset.com/library/adverts">Magazine adverts</a></li>
+                                <li><a href="https://brickset.com/library/bricksandpieces">Bricks and Pieces magazines</a></li>
+                                <li><a href="https://brickset.com/library">More...</a></li>
+
+                            </ul>
+                        </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </li>
+
+
+
+
+
+
+
+    
+    <li class="more haschildren"><a href="https://brickset.com/more">More...</a>
+        
+             <div class="subnav">
+                <div class="wrap">
+                    <div class="col">
+                        <div class="group">
+                            <div class="heading">Lists</div>
+                            <ul>
+                                <li><a href="https://brickset.com/reviews/brickset">Index of staff reviews</a></li>
+                                <li><a href="https://brickset.com/reviews/videos">Index of video reviews</a></li>
+                                <li><a href="https://brickset.com/reviews/topreviewers">Top reviewers</a></li>
+                                <li><a href="https://brickset.com/members">Members</a></li>
+                                <li><a href="https://brickset.com/bricklists/featured">LEGO set designers' BrickLists</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="group">
+                            <div class="heading">Tools</div>
+                            <ul>
+                                <li><a href="https://brickset.com/article/52666/brickset-web-services">Web services</a></li>
+                                <li><a href="https://brickset.com/article/52663/index-of-rss-feeds">RSS feeds</a></li>
+                                <li><a href="https://brickset.com/tools/apps">Brickset apps</a></li>
+                                <li><a href="https://2b0db1fc.sibforms.com/serve/MUIEADNUQQrlwUu7tTC4jeJNkIfkOJOkjjjPS_DoQ8Gxy5xPas7KB79gf8oAM4p8pTpSC7FeS4kUJvI1j7EjboEpOYZR2vnLj_PhC98AfEaJbwnBZCypyoYYULIntgYuYWE6pYvSBAmphorvxM-9TbgGwlXc9K-gyNmLKvhUPUqB_0aKsGVXbvaXMxkY4WvL9zIx3nD3kYRih2vF">Subscribe to our newsletter</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="group">
+                           <div class="heading">Help</div>
+                            <ul>
+                                <li><a href="https://brickset.com/article/110571/welcome-new-member!">Info for new members</a></li>
+                                <li><a href="https://brickset.com/search">Help with searching</a></li>
+                                <li><a href="https://brickset.com/faq">FAQ / How do I...</a></li>
+                                <li><a href="https://brickset.com/news/category-tutorial">Tutorials</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+
+                        <div class="group">
+                           <div class="heading">About Brickset</div>
+                            <ul>
+                                <li><a href="https://brickset.com/article/52659/about-brickset">About the site</a></li>
+                                <li><a href="https://brickset.com/article/52652/change-log">Change log</a></li>
+                                <li><a href="https://brickset.com/article/52660/privacy-and-cookies">Privacy and cookies</a></li>
+                                <li><a href="https://brickset.com/article/52662/novelty-policy">Novelty policy</a></li>
+                                <li><a href="https://brickset.com/article/52661/affiliate-marketing-disclosure">Affiliate marketing disclosure</a></li>
+                                <li><a href="https://brickset.com/article/54359/advertising-at-brickset">Advertising at Brickset</a></li>
+
+                                <li><a href="https://brickset.com/article/52667/infographic">Infographic</a></li>
+
+                                
+                                <li><a href="https://brickset.com/sitemap">Site map</a></li>
+                                <li><a href="https://brickset.com/suggestions">Suggest an idea for improvement</a></li>
+                                <li><a href="https://brickset.com/contact">Contact us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </li>
+
+    
+        <li class="other haschildren"><a href="https://brickset.com/mymenu">My menu</a>
+            <div class="subnav">
+                <div class="wrap">
+                    <div class="col">
+                        <div class="group">
+                            <ul>
+                                <li><a href="https://brickset.com/article/52664/api-version-3-documentation#" class="addtomenu" id="i567819">Add this page to My Menu</a></li>
+                                <li><a href="https://brickset.com/mymenu">View all/manage links</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <div class="heading">Your stuff</div>
+                            <ul>
+                                <li><a href="https://brickset.com/profile">Profile</a></li>
+                                <li><a href="https://brickset.com/bricklists/mine">BrickLists</a></li>
+                                <li><a href="https://brickset.com/reviews/mine">Reviews</a></li>
+                                <li><a href="https://brickset.com/queries/mine">Queries</a></li>
+                                <li><a href="https://brickset.com/comments/mine">Comments</a></li>
+                                <li><a href="https://brickset.com/notifications/mine">Notifications</a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                    <div class="col">
+                        <div class="group">
+                            <ul id="userlinks">
+                                
+
+
+
+
+
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </li>
+    
+
+    
+    
+        <li class="add showonmediumscreen"><a href="https://brickset.com/article/52664/api-version-3-documentation#" class="addtomenu" id="l567819">Add this page to My Menu</a></li>
+    
+</ul>
+
+                </nav>
+
+                <nav role="navigation" class="breadcrumbs">
+                    <ul><li><a href="https://brickset.com/">Home</a></li><li><a href="https://brickset.com/browse">Browse</a></li><li><a href="https://brickset.com/news">News</a></li><li><a href="https://brickset.com/news/category-Website-information">Website information</a></li><li>API version 3 documentation</li></ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <div class="content">
+            <div role="main" class="fullwidth">
+                
+
+<script type="text/javascript">
+    var articleID = '52664';
+    var showAdditionalCollectionInput = 0;
+</script>
+
+
+    
+        <article class="post">
+            
+
+
+
+    
+
+    
+
+    
+
+
+
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+
+    
+
+
+
+
+
+        
+
+                <header><h1><a href="https://brickset.com/article/52664/api-version-3-documentation">API version 3 documentation</a></h1></header><img alt="" src="./brickset_api_doc_files/logo.png" class="mainimg"><footer><div class="tags"><a href="https://brickset.com/news/category-Website-information">Website information</a> </div> <div class="comments"><a href="https://brickset.com/article/52664/api-version-3-documentation#comments">0 comments</a></div></footer>
+
+            <p class="intro">The API provides a robust means of interfacing with Brickset and now provides responses in JSON making it much easier to use and integrate into your application.</p>
+
+
+<p class="clear"> </p><hr>
+<h2>Accessing the API</h2>
+
+<p>The API endpoint is <a href="https://brickset.com/api/v3.asmx">https://brickset.com/api/v3.asmx</a>. Methods are invoked using the format <strong>https://brickset.com/api/v3.asmx/{method}</strong>, e.g. <strong>https://brickset.com/api/v3.asmx/getSets</strong>.</p>
+
+<p>Parameters can be specified on the URL (e.g. GET) or POSTed but in some cases they'll need to be POSTed due to restrictions on URL length and allowed characters in them.</p>
+
+<p>Methods beginning with <strong>get</strong> are used to retrieve data. Those beginning with <strong>set</strong> are used to make changes to a user's collection information.</p>
+
+<p>All methods require a valid API key to be passed, which can be obtained <a href="https://brickset.com/tools/webservices/requestkey">here</a>.</p>
+
+<p class="clear"> </p><hr>
+<h2>Methods</h2>
+
+<p>You can click on a method name to test it.</p>
+
+<table class="neattable api">
+	<tbody>
+		<tr class="alt">
+			<th colspan="3">
+			<h3>General methods</h3>
+			</th>
+		</tr>
+		<tr>
+			<th class="method">Method</th>
+			<th class="parameters">Parameters</th>
+			<th class="output">Output</th>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=checkKey">checkKey</a></h3>
+
+			<p>Check if an API key is valid.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Valid</dt>
+				<dd>{" &amp; "status":"success" &amp; "}</dd>
+				<dt>Invalid</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=login">login</a></h3>
+
+			<p>Log in as a user and retrieve a token that can be used in subsequent API calls.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>username</dt>
+				<dd>A Brickset username</dd>
+				<dt>password</dt>
+				<dd>A Brickset password</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Valid</dt>
+				<dd>{"status":"success" , "hash":"&lt;whatever&gt;"}</dd>
+				<dt>Invalid</dt>
+				<dd>{"status":"error", "message": "Invalid username or password"}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=checkUserHash">checkUserHash</a></h3>
+
+			<p>Check if a userHash key is valid.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>User hash retreived by the login method</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Valid</dt>
+				<dd>{" &amp; "status":"success" &amp; "}</dd>
+				<dt>Invalid</dt>
+				<dd>{"status":"error", "message":"Invalid user hash"}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getKeyUsageStats">getKeyUsageStats</a></h3>
+
+			<p>Get key usage stats for the last 30 days. Note that only calls to the getSets method count against key usage.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"apiKeyUsage":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<th colspan="3">
+			<h3>Sets</h3>
+			</th>
+		</tr>
+		<tr>
+			<th class="method">Method</th>
+			<th class="parameters">Parameters</th>
+			<th class="output">Output</th>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getSets">getSets</a></h3>
+
+			<p>Retrieve a list of sets, or more information about a particular one.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>Optional. Used only in conjunction with owned/wanted.</dd>
+				<dt>params</dt>
+				<dd>JSON string of search parameters and options. See below.</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"sets":[&lt;data&gt;]}</dd>
+				<dt>Invalid userHash</dt>
+				<dd>{"status":"error", "message":"Invalid user hash"}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+				<dt>Parameter error</dt>
+				<dd>{"status":"error", "message":"Parameter error"}</dd>
+				<dt>No valid parameters</dt>
+				<dd>{"status":"error", "message":"No valid parameters"}</dd>
+				<dt>Daily API limit exceeded</dt>
+				<dd>{"status":"error", "message":"API limit exceeded"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getAdditionalImages">getAdditionalImages</a></h3>
+
+			<p>Get a list of URLs of additional set images for the specified set.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>setID</dt>
+				<dd>Set ID</dd>
+				<dd> </dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"additionalImages":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getInstructions">getInstructions</a></h3>
+
+			<p>Get a list of instructions for the specified set.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>setID</dt>
+				<dd>Set ID</dd>
+				<dd> </dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"instructions":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getInstructions2">getInstructions2</a></h3>
+
+			<p>Get a list of instructions for the specified set without the need to look up the set ID first.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>setNumber</dt>
+				<dd>Set number</dd>
+				<dd> </dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"instructions":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getReviews">getReviews</a></h3>
+
+			<p>Get user reviews for the specified set.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>setID</dt>
+				<dd>Set ID</dd>
+				<dd> </dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"reviews":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getThemes">getThemes</a></h3>
+
+			<p>Get a list of themes, with the total number of sets in each.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"themes":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getSubthemes">getSubthemes</a></h3>
+
+			<p>Get a list of subthemes for a given theme, with the total number of sets in each.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>Theme</dt>
+				<dd>Theme</dd>
+				<dd> </dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"subthemes":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getYears">getYears</a></h3>
+
+			<p>Get a list of years for a given theme, with the total number of sets in each.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>Theme</dt>
+				<dd>Theme. Leave blank to get totals for all sets.</dd>
+				<dd> </dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"years":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<th colspan="3">
+			<h3>Set collection management</h3>
+			</th>
+		</tr>
+		<tr>
+			<th class="method">Method</th>
+			<th class="parameters">Parameters</th>
+			<th class="output">Output</th>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=setCollection">setCollection</a></h3>
+
+			<p>Set a user's collection details.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>userHash token</dd>
+				<dt>setID</dt>
+				<dd>Set ID</dd>
+				<dt>params</dt>
+				<dd>JSON string of parameters and options. See below.</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{" &amp; "status":"success" &amp; "}</dd>
+				<dt>Invalid userHash</dt>
+				<dd>{"status":"error", "message":"Invalid user hash"}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+				<dt>Invalid/missing parameters</dt>
+				<dd>{"status":"error", "message":"Parameter error"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getUserNotes">getUserNotes</a></h3>
+
+			<p>Get all of a user's set notes.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>userHash token</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"userNotes":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<th colspan="3">
+			<h3>Minifig collection management</h3>
+			</th>
+		</tr>
+		<tr>
+			<th class="method">Method</th>
+			<th class="parameters">Parameters</th>
+			<th class="output">Output</th>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getMinifigCollection">getMinifigCollection</a></h3>
+
+			<p>Get a list of minifigs owned/wanted by a user.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>userHash token</dd>
+				<dt>params</dt>
+				<dd>JSON string of parameters and options. See below.</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"minifigs":[&lt;data&gt;]}</dd>
+				<dt>Invalid userHash</dt>
+				<dd>{"status":"error", "message":"Invalid user hash"}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+				<dt>Invalid/missing parameters</dt>
+				<dd>{"status":"error", "message":"Parameter error"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=setMinifigCollection">setMinifigCollection</a></h3>
+
+			<p>Add/change a user's 'loose' minifig collection.</p>
+
+			<p>Note: due to the way this method works pass either own/want/qtyowned OR notes</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>userHash token</dd>
+				<dt>minifigNumber</dt>
+				<dd>BrickLink minifig number</dd>
+				<dt>params</dt>
+				<dd>JSON string of parameters and options. See below.</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{" &amp; "status":"success" &amp; "}</dd>
+				<dt>Invalid userHash</dt>
+				<dd>{"status":"error", "message":"Invalid user hash"}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+				<dt>Invalid/missing parameters</dt>
+				<dd>{"status":"error", "message":"Parameter error"}</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr class="alt">
+			<td>
+			<h3><a href="https://brickset.com/api/v3.asmx?op=getUserNotes">getUserMinifigNotes</a></h3>
+
+			<p>Get all of a user's minifigure notes.</p>
+			</td>
+			<td>
+			<dl>
+				<dt>apiKey</dt>
+				<dd>API key</dd>
+				<dt>userHash</dt>
+				<dd>userHash token</dd>
+			</dl>
+			</td>
+			<td class="output">
+			<dl>
+				<dt>Success</dt>
+				<dd>{"status":"success","matches":&lt;n&gt;,"userMinifigNotes":[&lt;data&gt;]}</dd>
+				<dt>Invalid API key</dt>
+				<dd>{"status":"error", "message":"Invalid API key"}</dd>
+			</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="clear"> </p><hr>
+<h2>JSON parameters</h2>
+
+<p>Parameters to influence results or to specify database updates are passed as a JSON string in the format {'parameter':'value',...}.</p>
+
+<p>All are optional but at least one must be used to retrieve results or make updates.</p>
+
+<p>For example, for the getSets method:</p>
+
+<ul>
+	<li>{'theme':'space','year':'1978,1979'}</li>
+	<li>{'theme':'Pirates','owned':1}</li>
+	<li>{'year':'2020','orderBy':'Pieces','pageSize':100}</li>
+	<li>{'tag':'crane','theme':'Technic','extendedData':1}</li>
+</ul>
+
+<table class="neattable">
+	<tbody>
+		<tr>
+			<th colspan="2">
+			<h3>getSets</h3>
+			</th>
+		</tr>
+		<tr class="alt">
+			<td colspan="2">Note: Parameters marked with a * will accept a Decimal value or a comma delimited list.</td>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Notes</th>
+		</tr>
+		<tr class="alt">
+			<td>setID</td>
+			<td>Internal SetID</td>
+		</tr>
+		<tr>
+			<td>query</td>
+			<td>Search term: searches set number, name, theme and subtheme</td>
+		</tr>
+		<tr class="alt">
+			<td>theme</td>
+			<td>*</td>
+		</tr>
+		<tr>
+			<td>subtheme</td>
+			<td>*</td>
+		</tr>
+		<tr class="alt">
+			<td>setNumber</td>
+			<td>* Full set number, in the format {number}-{variant}, e.g. 6876-1</td>
+		</tr>
+		<tr>
+			<td>year</td>
+			<td>*</td>
+		</tr>
+		<tr class="alt">
+			<td>tag</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>owned</td>
+			<td>Set to 1 to retrieve a user's owned sets</td>
+		</tr>
+		<tr class="alt">
+			<td>wanted</td>
+			<td>Set to 1 to retrieve a user's wanted sets</td>
+		</tr>
+		<tr>
+			<td>updatedSince</td>
+			<td>yyyy-mm-dd format</td>
+		</tr>
+		<tr class="alt">
+			<td>orderBy</td>
+			<td>Sort order<br>
+			Valid values are Number, YearFrom, Pieces, Minifigs, Rating, [UK|US|CA|DERetailPrice], [UK|US|CA|DEPricePerPiece], Theme, Subtheme, Name, Random, QtyOwned, OwnCount, WantCount, UserRating, CollectionID (order record added to a user's collection), Rank (search ranking)<br>
+			<br>
+			Add 'DESC' to the end of numerical field names to sort descending, e.g. PiecesDESC. Default: Number. Values are case-insensitive.</td>
+		</tr>
+		<tr>
+			<td>pageSize</td>
+			<td>Specify how many records to retrieve (default: 20, max: 500)</td>
+		</tr>
+		<tr class="alt">
+			<td>pageNumber</td>
+			<td>Specify which page of records to retrieve, use in conjunction with pageSize (default: 1)</td>
+		</tr>
+		<tr>
+			<td>extendedData</td>
+			<td>Set to 1 to retrieve the full data set, including tags, description and notes.</td>
+		</tr>
+		<tr class="alt">
+			<td colspan="2">
+			<h3> </h3>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2">
+			<h3>setCollection</h3>
+			</th>
+		</tr>
+		<tr class="alt">
+			<th>Parameter</th>
+			<th>Notes</th>
+		</tr>
+		<tr>
+			<td>own</td>
+			<td>1 or 0. If 0 then qtyOwned is automatically set to 0</td>
+		</tr>
+		<tr class="alt">
+			<td>want</td>
+			<td>1 or 0</td>
+		</tr>
+		<tr>
+			<td>qtyOwned</td>
+			<td>0-999. If &gt; 0 then own is automatically set to 1</td>
+		</tr>
+		<tr class="alt">
+			<td>notes</td>
+			<td>User notes, max 1000 characters</td>
+		</tr>
+		<tr>
+			<td>rating</td>
+			<td>User rating 1-5</td>
+		</tr>
+		<tr class="alt">
+			<td colspan="2">
+			<h3> </h3>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2">
+			<h3>getMinifigCollection</h3>
+			</th>
+		</tr>
+		<tr class="alt">
+			<th>Parameter</th>
+			<th>Notes</th>
+		</tr>
+		<tr>
+			<td>owned</td>
+			<td>Set to 1 to retrieve minifigs owned</td>
+		</tr>
+		<tr class="alt">
+			<td>wanted</td>
+			<td>Set to 1 to retrieve minifigs wanted</td>
+		</tr>
+		<tr>
+			<td>query</td>
+			<td>This can be a minifig number or name. Wildcards are added before and after. If omitted, all minifigs owned are returned.</td>
+		</tr>
+		<tr class="alt">
+			<td colspan="2">
+			<h3> </h3>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2">
+			<h3>setMinifigCollection</h3>
+			</th>
+		</tr>
+		<tr class="alt">
+			<th>Parameter</th>
+			<th>Notes</th>
+		</tr>
+		<tr>
+			<td>own</td>
+			<td>1 or 0. If 0 then qtyOwned is automatically set to 0</td>
+		</tr>
+		<tr class="alt">
+			<td>want</td>
+			<td>1 or 0</td>
+		</tr>
+		<tr>
+			<td>qtyOwned</td>
+			<td>0-999. If &gt; 0 then own is automatically set to 1</td>
+		</tr>
+		<tr class="alt">
+			<td>notes</td>
+			<td>User notes, max 1000 characters</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="clear"> </p><hr>
+<h2>Class definitions</h2>
+
+<h3>Sets</h3>
+
+<pre>Class sets
+    Public setID As Integer
+    Public number As String
+    Public numberVariant As Integer
+    Public name As String
+    Public year As Integer
+    Public theme As String
+    Public themeGroup As String
+    Public subtheme As String
+    Public category As String
+    Public released As Boolean
+    Public pieces As Integer?
+    Public minifigs As Integer?
+    Public image As New image
+    Public bricksetURL As String
+    Public collection As New collection
+    Public collections As New collections
+    Public LEGOCom As New LEGOCom
+    Public rating As Single
+    Public reviewCount As integer
+    Public launchDate as DateTime?
+    Public exitDate as DateTime?
+    Public packagingType As String
+    Public availability As String
+    Public instructionsCount As Integer
+    Public additionalImageCount As Integer
+    Public ageRange As New ageRange
+    Public dimensions As New dimensions
+    Public modelDimensions As New modelDimensions
+    Public barcode As New barcodes
+    Public itemNumber As New itemNumbers
+    Public extendedData As New extendedData
+    Public lastUpdated As DateTime
+End Class
+
+Class LEGOCom
+    Public US As New LEGOComDetails
+    Public UK As New LEGOComDetails
+    Public CA As New LEGOComDetails
+    Public DE As New LEGOComDetails
+End Class
+
+Class LEGOComDetails
+    Public retailPrice As Decimal?
+    Public dateFirstAvailable As DateTime?
+    Public dateLastAvailable As DateTime?
+End Class
+
+Class dimensions
+    Public height As Single?
+    Public width As Single?
+    Public depth As Single?
+    Public weight As Single?
+End Class
+
+Class modelDimensions
+    Public dimension1 As Single?
+    Public dimension2 As Single?
+    Public dimension3 As Single?
+End Class
+
+Class extendedData
+    Public notes As String
+    Public tags() As String
+    Public description As String
+End Class
+
+Class collection
+    Public owned As Boolean?
+    Public wanted As Boolean?
+    Public qtyOwned As Integer?
+    Public rating As Integer?
+    Public notes As String
+End Class
+
+Class collections
+    Public ownedBy As Integer?
+    Public wantedBy As Integer?
+End Class
+
+Class barcodes
+    Public EAN As String
+    Public UPC As String
+End Class
+
+Class itemNumbers
+     Public NA As String
+     Public EU As String
+End Class
+
+Class ageRange
+    Public min As Integer?
+    Public max As Integer?
+End Class
+
+Class image
+    Public thumbnailURL As String
+    Public imageURL As String
+End Class
+</pre>
+
+<h3>Other classes</h3>
+
+<pre>Class rating
+    Public overall As Integer
+    Public parts As Integer
+    Public buildingExperience As Integer
+    Public playability As Integer
+    Public valueForMoney As Integer
+End Class
+
+Class reviews
+    Public author As String
+    Public datePosted As Date
+    Public rating As rating
+    Public title As String
+    Public review As String
+    Public HTML As Boolean
+End Class
+
+Class minifigCollection
+    Public minifigNumber As String
+    Public name as String
+    Public category as String
+    Public ownedInSets As Integer
+    Public ownedLoose As Integer
+    Public ownedTotal As Integer
+    Public wanted As Boolean
+End Class
+
+Class themes
+    Public theme As String
+    Public setCount As Integer
+    Public subthemeCount As Integer
+    Public yearFrom As Integer
+    Public yearTo As Integer
+End Class
+
+Class subthemes
+    Public theme As String
+    Public subtheme As String
+    Public setCount As Integer
+    Public yearFrom As Integer
+    Public yearTo As Integer
+End Class
+
+Class years
+    Public theme As String
+    Public year As String
+    Public setCount As Integer
+End Class
+
+Class instructions
+    Public URL As String
+    Public description As String
+End Class
+
+Class userNotes
+    Public setID As Integer
+    Public notes As String
+End Class
+
+Class userMinifigNotes 
+    Public minifigNumber As String
+    Public notes As String
+End Class
+
+Class apiKeyUsage
+    Public dateStamp As Date
+    Public count As Integer
+End Class
+
+
+</pre>
+
+<p class="clear"> </p><hr>
+<h2>Change log</h2>
+
+<table class="neattable">
+	<tbody>
+		<tr>
+			<th>Date</th>
+			<th>Version</th>
+			<th>Change</th>
+		</tr>
+		<tr class="alt">
+			<td>23 March 2020</td>
+			<td>0.1</td>
+			<td>First version of APi v3</td>
+		</tr>
+		<tr>
+			<td>30 March 2020</td>
+			<td>0.2</td>
+			<td>Various changes in response to user feedback</td>
+		</tr>
+		<tr class="alt">
+			<td>1 April 2020</td>
+			<td>0.3</td>
+			<td>getYears modified to accept an empty theme. to return all years with totals of all sets released<br>
+			tag added as a parameter to getSets<br>
+			extendedData added as a parameter to getSets</td>
+		</tr>
+		<tr>
+			<td>5 April 2020</td>
+			<td>0.4</td>
+			<td>Extensive reorganisation of the sets class<br>
+			userNotes.userNotes renamed userNotes.notes</td>
+		</tr>
+		<tr class="alt">
+			<td>14 April 2020</td>
+			<td>0.5</td>
+			<td>Additional error codes returned from getSets. 0 matching records now returns success.</td>
+		</tr>
+		<tr>
+			<td>15 April 2020</td>
+			<td>0.6</td>
+			<td>Number of matches returned by all getXXX methods, and 'No matches' error removed ('matches':0 in such cases now).</td>
+		</tr>
+		<tr class="alt">
+			<td>16 April 2020</td>
+			<td>0.7</td>
+			<td>apiKeyUsage method added.</td>
+		</tr>
+		<tr>
+			<td>04 May 2020</td>
+			<td>0.8</td>
+			<td>name and category added to minifigCollection class.</td>
+		</tr>
+		<tr class="alt">
+			<td>01 June 2020</td>
+			<td>1.0</td>
+			<td>API now stable and complete. No major changes anticipated.</td>
+		</tr>
+		<tr>
+			<td>20 July 2020</td>
+			<td>1.01</td>
+			<td>getReviews added.</td>
+		</tr>
+		<tr class="alt">
+			<td>23 Sept 2020</td>
+			<td>1.02</td>
+			<td>getUserMinifigureNotes added and notes parameter added to setMinifigureCollection.</td>
+		</tr>
+		<tr>
+			<td>02 Oct 2020</td>
+			<td>1.03</td>
+			<td>setCollection and setMinifigCollection, max notes length increased to 1000</td>
+		</tr>
+		<tr class="alt">
+			<td>04 Feb 2021</td>
+			<td>1.04</td>
+			<td>getInstructions2 added for specific use case</td>
+		</tr>
+		<tr>
+			<td>03 June 2025</td>
+			<td>1.05</td>
+			<td>modelDimensions and itemNumber added to sets</td>
+		</tr>
+	</tbody>
+</table>
+
+
+                <div class="links">
+                    <p class="notliked"><a href="https://brickset.com/article/52664/api-version-3-documentation#" class="articlelikebutton" id="like52664;567819">Like <img id="img52664" src="./brickset_api_doc_files/like_normal.png" alt="Like button"><span id="liketext52664">17</span></a></p>
+                </div>
+                <div class="sharethis-inline-share-buttons st-left  st-inline-share-buttons st-animated" data-url="https://brickset.com/article/52664/api-version-3-documentation" data-title="API version 3 documentation" data-image="https://brickset.com/assets/images/logo/bricks.jpg" id="st-1"><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="./brickset_api_doc_files/facebook.svg">
+  
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="./brickset_api_doc_files/twitter.svg">
+  
+</div><div class="st-btn" data-network="messenger" style="display: inline-block;">
+  <img alt="messenger sharing button" src="./brickset_api_doc_files/messenger.svg">
+  
+</div><div class="st-btn" data-network="whatsapp" style="display: inline-block;">
+  <img alt="whatsapp sharing button" src="./brickset_api_doc_files/whatsapp.svg">
+  
+</div><div class="st-btn st-last" data-network="reddit" style="display: inline-block;">
+  <img alt="reddit sharing button" src="./brickset_api_doc_files/reddit.svg">
+  
+</div></div>
+            
+
+
+        
+
+        
+
+
+    
+
+
+        </article>
+
+        
+
+
+
+
+
+
+
+
+
+        <section class="main">
+            <a href="https://brickset.com/">Return to home page  »</a>
+        </section>
+        <p class="hidden" id="viewCount"></p>
+    
+
+            </div>
+
+            
+            
+
+        </div>
+
+        
+
+        <footer role="navigation">
+            <div class="wrap">
+                <nav role="navigation" class="breadcrumbs">
+                    You are here: 
+                    <ul><li><a href="https://brickset.com/">Home</a></li><li><a href="https://brickset.com/browse">Browse</a></li><li><a href="https://brickset.com/news">News</a></li><li><a href="https://brickset.com/news/category-Website-information">Website information</a></li><li>API version 3 documentation</li></ul>
+                </nav>
+            </div>
+        </footer>
+
+        <footer role="contentinfo">
+            <div class="wrap">
+                <section class="stats">
+                    <h3>Site Statistics</h3>
+                    <ul>
+                        
+
+
+<li>There are <mark>22,594 items</mark> in our database</li>
+<li>Our members have written <mark>40,528 set reviews</mark></li>
+<li><mark>10,204 members</mark> have logged in in the last 24 hours, <mark>24,049</mark> in the last 7 days, <mark>38,361</mark> in the last month</li>
+<li><mark>801 people</mark> have joined this week. There are now <mark>366,575 members</mark></li>
+<li>Between us we own <mark>47,520,108 sets</mark> worth at least <mark>US$1,743,976,456</mark> and containing <mark>17,781,577,690 pieces</mark></li>
+
+
+                    </ul>
+                </section>
+                <section class="contact">
+                    <h3>Get in touch</h3>
+                    
+
+<p>If you have LEGO news, new images or something else to tell us about, send us a message. If you have a lot to tell us, use <a href="https://brickset.com/contact">this contact form</a>.</p>
+<p id="contactFormResult" class="alert"></p>
+<form id="contactForm" method="post" action="https://brickset.com/contact">
+    <div class="col">
+        <input type="text" placeholder="Name" id="contactFormName" value="minhn201" name="name" required="">
+        <input type="email" placeholder="Email" id="contactFormEmail" value="minhjournal021@gmail.com" name="email" required="">
+    </div>
+    <div class="col">
+        <textarea placeholder="Message" id="contactFormMessage" name="message"></textarea>
+    </div>
+
+
+    <input type="submit" value="Send message">
+    
+</form>
+
+
+                </section>
+                <small class="links">
+                    <a href="https://brickset.com/faq">Frequently Asked Questions</a> |
+                    <a href="https://brickset.com/article/52659/about-brickset">About Brickset</a> |
+                    <a href="https://brickset.com/article/52660/privacy-and-cookies">Privacy and Cookies</a> |
+                    <a href="https://brickset.com/article/52661/affiliate-marketing-disclosure">Affiliate Marketing Disclosure</a> |
+                    <a href="https://brickset.com/sitemap">Site Map</a> |
+                    <a href="https://brickset.com/contact">Contact Us</a>
+                </small>
+                <small>LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks of the LEGO Group of Companies. ©2025 The LEGO Group.</small>
+                <small>Brickset, the Brickset logo and all content not covered by The LEGO Group's copyright is, unless otherwise stated, ©1997-2025 Brickset ltd.</small>
+                <small>&nbsp;</small>
+                <small><a href="https://lan.lego.com/"><img src="./brickset_api_doc_files/rlfm-white-logo.png" alt="Recognised LEGO Fan Media"></a></small>
+
+                <small>&nbsp;</small>
+                <small class="onlineusers"></small>
+                
+            </div>
+        </footer>
+    </div>
+    <div id="toTop">^ Top</div>
+
+
+    <script src="./brickset_api_doc_files/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="./brickset_api_doc_files/jquery.min.js" type="text/javascript"></script>
+    <script src="./brickset_api_doc_files/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/assets/template/js/vendor/jquery-1.9.1.min.js"><\/script><script src="/assets/template/js/vendor/jquery-ui-1.9.1.min.js"><\/script>')</script>
+    <script src="./brickset_api_doc_files/main.js" type="text/javascript"></script>
+    <script src="./brickset_api_doc_files/brickset.js" type="text/javascript"></script> 
+    <script src="./brickset_api_doc_files/highslide-with-html.packed.js" type="text/javascript"></script>
+ 
+
+    
+    
+
+
+     
+    
+
+
+
+
+    
+
+    <script type="text/javascript">
+        
+    </script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ab76a983df401da',t:'MTc2NTMxMzg2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./brickset_api_doc_files/saved_resource(1).html"></iframe><script defer="" src="./brickset_api_doc_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;6a9a238990984c4492f28280a102793d&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+ <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-id-1" style="display: none; outline: 0px; z-index: 1000; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><a href="https://brickset.com/article/52664/api-version-3-documentation#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="ajaxContainer" class="ui-dialog-content ui-widget-content"></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-2" tabindex="0" aria-disabled="false" style="z-index: 1; display: none;"></ul><div class="highslide-container" style="padding: 0px; border: none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;"><a class="highslide-loading" title="Click to cancel" href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;">Loading...</a><div style="display: none;"></div><table cellspacing="0" style="padding: 0px; border: none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;"><tbody style="padding: 0px; border: none; margin: 0px;"><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px 0px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -40px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) -20px 0px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -80px; height: 20px; width: 20px;"></td><td class="rounded-white highslide-outline" style="padding: 0px; border: none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) -20px -80px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -20px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -60px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://brickset.com/assets/js/highslide/graphics/outlines/rounded-white.png&quot;) -20px -20px; height: 20px; width: 20px;"></td></tr></tbody></table></div></body></html>

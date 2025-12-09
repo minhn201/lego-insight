@@ -5,7 +5,7 @@ from agent import handle_query
 load_dotenv()
 
 queries = [
-    "Give me a detail summary of customer reviews of set 75391-1"
+    "Top 10 expensive lego star wars set"
 ]
 
 for query in queries:
