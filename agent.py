@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.agents import create_tool_calling_agent, AgentExecutor
+from langchain.agents import AgentExecutor, create_tool_calling_agent
 from tools.rebrickable_tool import rebrickable_set_tool, rebrickable_minifigs_tool, rebrickable_colors_tool, rebrickable_parts_tool
 from tools.brickset_tool import brickset_get_sets_tool, brickset_get_reviews_tool, brickset_get_themes_tool
 from langchain.tools import tool, StructuredTool
@@ -22,7 +22,7 @@ def lookup_api_documentation(query:str) -> str:
 
     Ignore endpoints that are not avaiblable in this implemenation.
     """
-    docs = retriver.invovke(query)
+    docs = retriver.invoke(query)
     return "\n\n".join([f"[{doc.metadata.get('api', 'Unknown')}] {doc.page_content}" for doc in docs])
 
 
