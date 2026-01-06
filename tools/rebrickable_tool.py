@@ -73,28 +73,28 @@ def fetch_parts_list(set_num: str) -> str:
 rebrickable_set_tool = StructuredTool.from_function(
     func=fetch_rebrickable_set,
     name="rebrickable_set_lookup",
-    description="Fetches LEGO set details (name, piece count, year, image).",
+    description="Fetches LEGO set basic details (name, piece count, year, image). Use Brickset tools for more details",
     args_schema=RebrickableInput
  )
 
 rebrickable_minifigs_tool = StructuredTool.from_function(
     func=fetch_rebrickable_minifigs,
     name="rebrickable_minifigs_lookup",
-    description="Fetches minifigures details for a LEGO set.",
+    description="Fetches minifigures details for a LEGO set. Only use this when the user specifically asks for it",
     args_schema=RebrickableInput
 )
 
 rebrickable_colors_tool = StructuredTool.from_function(
     func=fetch_color_stats,
     name="rebrickable_color_stats",
-    description="Fetches color distribution of parts in a LEGO set.",
+    description="Fetches color distribution of parts in a LEGO set. Only use this when the user specifically asks for it",
     args_schema=RebrickableInput
 )
 
 rebrickable_parts_tool = StructuredTool.from_function(
     func=fetch_parts_list,
     name="rebrickable_parts_list",
-    description="Fetches parts list for a LEGO set as a CSV. Not for looking up minifigs",
+    description="Fetches parts list for a LEGO set as a CSV. Not for looking up minifigs. Only use this when the user specifically asks for it",
     args_schema=RebrickableInput
 )
 

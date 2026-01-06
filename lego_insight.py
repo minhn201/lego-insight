@@ -1,7 +1,9 @@
 import os
 import sys
 from dotenv import load_dotenv
-from agent import handle_query
+from agent import handle_query, chat_history
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 load_dotenv()
 
